@@ -79,7 +79,7 @@ jobs:
         # run: |
         #   commit_time=`git show --pretty=format:"%ci" | head -1`
         #   python -m nox -s update_build_number -- $commit_time
-        shell: bash
+        # shell: bash
 
       # - name: Publish prerelease VSIX
       #   run: npm run vsce-publish-prerelease ${{ secrets.MARKETPLACE_ACCESS_TOKEN }}
