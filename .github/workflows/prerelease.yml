@@ -22,9 +22,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        run: |
-          commit_time=`git show --pretty=format:"%ci" | head -1`
-          echo $commit_time
 
       - name: Install Node
         uses: actions/setup-node@v3
