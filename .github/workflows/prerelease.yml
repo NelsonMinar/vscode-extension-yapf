@@ -75,8 +75,7 @@ jobs:
       # This number does not change if you re-run the workflow run.
       - name: Update extension build number
         run: |
-          commit_time=`git show --pretty=format:"%ci" | head -1`
-          echo $commit_time
+          git show --pretty=format:"%ci" | head -1
           python -m nox -s update_build_number -- $commit_time
         shell: bash
 
